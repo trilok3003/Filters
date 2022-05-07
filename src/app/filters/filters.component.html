@@ -1,0 +1,111 @@
+<button (click)="filters()">open</button>
+<section class="filterz" [ngClass]="{open:filter == true}">
+    <div class="filterz__header">
+        <div class="filterz__header__title">Filters</div>
+        <button (click)="filters()" class="filterz__header__close"></button>
+    </div>
+    <div class="filterz__body">
+        <div class="form-group">
+            <label>Lifestyle</label>
+            <div class="row">
+                <div class="col-6">
+                    <label class="checkboxz">
+                        <input type="radio" name="l">
+                        <div><span></span>Home</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz">
+                        <input type="radio" name="l">
+                        <div><span></span>Fashion</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="row">
+                <div class="col-6">
+                    <label class="checkboxz">
+                        <input type="radio" name="g">
+                        <div><span></span>Male</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz">
+                        <input type="radio" name="g">
+                        <div><span></span>Female</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <div class="row">
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span style="background-image:url(https://via.placeholder.com/20)"></span>Tees
+                        </div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span
+                                style="background-image:url(https://via.placeholder.com/20)"></span>Shirts</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span
+                                style="background-image:url(https://via.placeholder.com/20)"></span>Pants</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span style="background-image:url(https://via.placeholder.com/20)"></span>Tees
+                        </div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span
+                                style="background-image:url(https://via.placeholder.com/20)"></span>Shirts</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span
+                                style="background-image:url(https://via.placeholder.com/20)"></span>Pants</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span style="background-image:url(https://via.placeholder.com/20)"></span>Tees long title
+                        </div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span
+                                style="background-image:url(https://via.placeholder.com/20)"></span>Shirts</div>
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="checkboxz checkboxz--icon">
+                        <input type="radio" name="c">
+                        <div><span></span><span
+                                style="background-image:url(https://via.placeholder.com/20)"></span>Pants</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

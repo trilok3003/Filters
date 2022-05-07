@@ -1,0 +1,125 @@
+.filterz {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  transform: translateX(100%);
+  transition:all .3s ease;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+.filterz.open{
+  transform: translateX(0%);
+}
+.filterz__header {
+  height: 50px;
+  background: #333;
+  position: relative;
+}
+.filterz__header__title {
+  padding: 0px 50px 0px 20px;
+  line-height: 50px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filterz__header__close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  font-size: 1rem;
+  padding: 0px;
+  border: 0px;
+  outline: none;
+  background: transparent;
+  color: white;
+  z-index: 5;
+}
+.filterz__header__close:before {
+  content: "\2716";
+}
+.filterz__body {
+  height: calc(100% - 50px);
+  padding: 20px;
+  background: #fff;
+  overflow-y: auto;
+}
+.filterz__body .row{
+  margin-left: -2px;
+    margin-right: -2px;
+}
+.filterz__body .row > [class^="col"]{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.checkboxz {
+  display: block;
+  position: relative;
+  margin: 0px 0px 15px 0px;
+}
+.checkboxz input {
+  display: none;
+}
+.checkboxz div {
+  font-size: 0.9rem;
+  padding: 0px 30px 0px 10px;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.checkboxz:hover div {
+  background: #f9f9f9;
+  cursor: pointer;
+}
+.checkboxz div span:nth-child(1) {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -8px;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 100%;
+}
+.checkboxz div span:nth-child(1)::before {
+  font-family: "Line Awesome Free";
+  content: "\2714";
+}
+.checkboxz div span:nth-child(2) {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -10px;
+  height: 20px;
+  width: 20px;
+}
+.checkboxz.checkboxz--icon div {
+  padding-left: 30px;
+}
+.checkboxz.checkboxz--icon div span:nth-child(2) {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.checkboxz input:checked + div span:nth-child(1) {
+  background: black;
+  border-color: black;
+  color: white;
+}
